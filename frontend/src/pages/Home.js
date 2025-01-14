@@ -109,7 +109,7 @@ setExpenseAmt(expense)
           'Authorization': localStorage.getItem("token"),
           'Content-Type':'application/json'
         },
-        method:'Delete',
+        method:'DELETE',
         // body:JSON.stringify(data)
       };
 
