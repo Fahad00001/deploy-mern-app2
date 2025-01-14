@@ -52,7 +52,7 @@ setExpenseAmt(expense)
 
   const fetchExpenses = async () => {
     try {
-      const url = `${APIUrl}/expenses`;
+      const url = `https://deploy-mern-app2-ui.vercel.app/expenses`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
@@ -73,7 +73,7 @@ setExpenseAmt(expense)
   };
   const addExpenses = async (data) => {
     try {
-      const url = `${APIUrl}/expenses`;
+      const url = `https://deploy-mern-app2-ui.vercel.app/expenses`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
@@ -103,7 +103,7 @@ setExpenseAmt(expense)
 
   const handleDeleteexpense=async(expenseId)=>{
     try {
-      const url = `${APIUrl}/expenses/${expenseId}`;
+      const url = `https://deploy-mern-app2-ui.vercel.app/expenses/${expenseId}`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
