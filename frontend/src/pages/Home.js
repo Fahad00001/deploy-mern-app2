@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { APIUrl, handleError, handleSuccess } from "../utils";
+import {  handleError, handleSuccess } from "../utils";
 import { ToastContainer } from "react-toastify";
 import ExpensesTable from "./ExpensesTable";
 import ExpenseTracker from "./ExpenseTracker";
@@ -52,7 +52,7 @@ setExpenseAmt(expense)
 
   const fetchExpenses = async () => {
     try {
-      const url = 'https://deploy-mern-app2-ui.vercel.app/expenses';
+      const url = 'https://deploy-mern-app2-api1.vercel.app/expenses';
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
@@ -73,7 +73,7 @@ setExpenseAmt(expense)
   };
   const addExpenses = async (data) => {
     try {
-      const url = 'https://deploy-mern-app2-ui.vercel.app/expenses';
+      const url = `https://deploy-mern-app2-api1.vercel.app/expenses`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
@@ -103,7 +103,7 @@ setExpenseAmt(expense)
 
   const handleDeleteexpense=async(expenseId)=>{
     try {
-      const url = `https://deploy-mern-app2-ui.vercel.app/expenses/${expenseId}`;
+      const url = `https://deploy-mern-app2-api1.vercel.app/${expenseId}`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
