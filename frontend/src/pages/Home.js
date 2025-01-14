@@ -103,7 +103,7 @@ setExpenseAmt(expense)
 
   const handleDeleteexpense=async(expenseId)=>{
     try {
-      const url = `https://deploy-mern-app2-api1.vercel.app/${expenseId}`;
+      const url = `https://deploy-mern-app2-api1.vercel.app/expenses/${expenseId}`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem("token"),
