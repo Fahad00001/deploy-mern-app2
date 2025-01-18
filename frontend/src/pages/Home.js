@@ -19,7 +19,7 @@ function Home() {
   }, []);
 
   useEffect(()=>{
-    const amounts=expenses.map((item)=>item.amount)
+    const amounts=expenses?.map((item)=>item.amount)
     console.log(amounts)
     const income = amounts
     .map(item => Number(item)) // Convert all strings to numbers
